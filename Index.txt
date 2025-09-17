@@ -6,8 +6,61 @@
   <title>Tourism Cares Event 2025</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    /* Sections */
     .section { display: none; }
     .section.active { display: block; }
+
+    /* Sponsors scroll styling */
+    .sponsor-container {
+      width: 100%;
+      overflow: hidden;
+      background: #f0f4f8;
+      padding: 20px 0;
+      border-top: 2px solid #ddd;
+      border-bottom: 2px solid #ddd;
+      border-radius: 12px;
+    }
+
+    .sponsor-track {
+      display: flex;
+      align-items: center;
+      width: calc(2 * 100%);
+      animation: scrollLeft 12s linear infinite;
+    }
+
+    .sponsor-track > div {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .sponsor-track img {
+      max-height: 70px;   /* Resize safely */
+      max-width: 150px;
+      width: auto;
+      height: auto;
+      margin-right: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .sponsor-track img:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes scrollLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 640px) {
+      .sponsor-track img {
+        max-height: 50px;
+        max-width: 100px;
+        margin-right: 12px;
+      }
+    }
   </style>
   <script>
     function showSection(sectionId) {
@@ -21,57 +74,53 @@
 <body class="font-sans bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
   <!-- Header -->
-  <header class="bg-blue-900 text-white py-6 text-center">
-    <h1 class="text-4xl font-bold">Tourism Cares Event 2025</h1>
-    <p class="mt-2 text-lg italic">"This-ability is our superpower. Building one community! One legacy for all!!"</p>
+  <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-8 text-center shadow-lg">
+    <h1 class="text-4xl md:text-5xl font-bold">Tourism Cares Event 2025</h1>
+    <p class="mt-3 text-lg md:text-xl italic">"Building one community! One legacy for all!!"</p>
   </header>
 
   <!-- Navigation -->
-  <nav class="bg-blue-700 text-white py-2 sticky top-0 z-50">
-    <ul class="flex justify-center space-x-4 font-semibold flex-wrap">
-      <li><button onclick="showSection('about')" class="hover:underline">About</button></li>
-      <li><button onclick="showSection('mission')" class="hover:underline">Vision & Mission</button></li>
-      <li><button onclick="showSection('goals')" class="hover:underline">Our Goals</button></li>
-      <li><button onclick="showSection('program')" class="hover:underline">Program</button></li>
-      <li><button onclick="showSection('meaning')" class="hover:underline">Tourism Cares</button></li>
-      <li><button onclick="showSection('contact')" class="hover:underline">Contact</button></li>
+  <nav class="bg-white sticky top-0 z-50 shadow-md">
+    <ul class="flex justify-center space-x-4 md:space-x-6 py-3 font-semibold flex-wrap">
+      <li><button onclick="showSection('about')" class="px-3 py-2 rounded-md hover:bg-blue-100 transition">About</button></li>
+      <li><button onclick="showSection('mission')" class="px-3 py-2 rounded-md hover:bg-blue-100 transition">Vision & Mission</button></li>
+      <li><button onclick="showSection('goals')" class="px-3 py-2 rounded-md hover:bg-blue-100 transition">Our Goals</button></li>
+      <li><button onclick="showSection('program')" class="px-3 py-2 rounded-md hover:bg-blue-100 transition">Program</button></li>
+      <li><button onclick="showSection('meaning')" class="px-3 py-2 rounded-md hover:bg-blue-100 transition">Tourism Cares</button></li>
+      <li><button onclick="showSection('contact')" class="px-3 py-2 rounded-md hover:bg-blue-100 transition">Contact</button></li>
     </ul>
   </nav>
 
   <main class="flex-grow">
 
     <!-- About Section -->
-    <section id="about" class="section max-w-4xl mx-auto px-6 py-6">
-      <h2 class="text-3xl font-bold text-blue-900 mb-4">About the Event</h2>
-      <div class="bg-white shadow-lg rounded-xl p-4 space-y-2">
-        <p>
+    <section id="about" class="section max-w-4xl mx-auto px-6 py-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">About the Event</h2>
+      <div class="bg-white shadow-xl rounded-2xl p-6 space-y-4">
+        <p class="text-lg">
           The <strong>Tourism Cares Event</strong> is an inclusivity initiative that promotes awareness and celebrates the fact that people with disabilities can and should be a part of tourism. It is proudly organized by <strong>second-year students pursuing a Diploma in Tourism and Event Management</strong> at the Central University of Technology, Free State.
         </p>
         <p><strong>Date:</strong> 26 September 2025</p>
         <p><strong>Time:</strong> 09:00 – 14:00</p>
         <p><strong>Venue:</strong> Boet Troskie Basement, Central University of Technology, Free State</p>
 
-        <div class="grid md:grid-cols-2 gap-4 mt-4">
-          <img src="poster.png" alt="Poster" class="rounded-lg shadow-md">
-          <div class="grid gap-2">
-            <img src="dtem.jpeg" alt="DTEM Students" class="rounded-lg shadow-md">
-            <img src="disability.webp" alt="Disability Symbols" class="rounded-lg shadow-md">
-          </div>
+        <div class="grid md:grid-cols-2 gap-6 mt-6">
+          <img src="poster.png" alt="Poster" class="rounded-xl shadow-lg hover:scale-105 transition duration-300">
         </div>
       </div>
     </section>
 
     <!-- Vision & Mission -->
-    <section id="mission" class="section bg-gray-100 py-6 px-6 max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold text-blue-900 mb-4">Vision & Mission</h2>
-      <p><strong>Vision:</strong> To build an inclusive tourism community where everyone, regardless of ability, can fully participate and create lasting memories.</p>
-      <p><strong>Mission:</strong> Our mission is to raise awareness, break barriers, and advocate for accessibility in tourism. We aim to show that tourism is for everyone and that inclusivity strengthens our industry and communities.</p>
+    <section id="mission" class="section bg-gray-100 py-8 px-6 max-w-4xl mx-auto rounded-2xl my-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Vision & Mission</h2>
+      <p class="text-lg"><strong>Vision:</strong> To build an inclusive tourism community where everyone, regardless of ability, can fully participate and create lasting memories.</p>
+      <p class="text-lg mt-2"><strong>Mission:</strong> Our mission is to raise awareness, break barriers, and advocate for accessibility in tourism. We aim to show that tourism is for everyone and that inclusivity strengthens our industry and communities.</p>
     </section>
 
     <!-- Goals -->
-    <section id="goals" class="section max-w-4xl mx-auto px-6 py-6">
-      <h2 class="text-3xl font-bold text-blue-900 mb-4">Our Goals</h2>
-      <ul class="list-disc list-inside text-lg space-y-1">
+    <section id="goals" class="section max-w-4xl mx-auto px-6 py-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Our Goals</h2>
+      <ul class="list-disc list-inside text-lg space-y-2">
         <li>Raise awareness about inclusivity in tourism.</li>
         <li>Encourage accessible tourism opportunities for people with disabilities.</li>
         <li>Promote community unity and collaboration in the tourism sector.</li>
@@ -81,9 +130,9 @@
     </section>
 
     <!-- Program -->
-    <section id="program" class="section bg-blue-50 py-6 px-6 max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold text-blue-900 mb-4">Program Schedule</h2>
-      <ul class="space-y-1 text-lg">
+    <section id="program" class="section bg-blue-50 py-8 px-6 max-w-4xl mx-auto rounded-2xl my-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Program Schedule</h2>
+      <ul class="space-y-2 text-lg">
         <li><b>09:00 – 09:20</b> | Registration & Welcome – Guest arrivals, accessibility tools display</li>
         <li><b>09:20 – 09:30</b> | Opening Prayer – Led by the Pastor</li>
         <li><b>09:30 – 09:45</b> | Welcome Remarks – “Inclusive Tourism for All”</li>
@@ -103,9 +152,9 @@
     </section>
 
     <!-- Meaning -->
-    <section id="meaning" class="section bg-gray-100 py-6 px-6 max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold text-blue-900 mb-4">Why "Tourism Cares"?</h2>
-      <img src="header.png" alt="Inclusive Tourism Banner" class="rounded-lg shadow-md mb-4">
+    <section id="meaning" class="section bg-gray-100 py-8 px-6 max-w-4xl mx-auto rounded-2xl my-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Why "Tourism Cares"?</h2>
+      <img src="header.png" alt="Inclusive Tourism Banner" class="rounded-xl shadow-lg mb-4 hover:scale-105 transition duration-300">
       <p class="text-lg">
         <strong>Tourism Cares</strong> represents the heart of hospitality and inclusivity.  
         It means that tourism is not only about destinations and experiences, but also about 
@@ -116,10 +165,10 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section max-w-4xl mx-auto px-6 py-6">
-      <h2 class="text-3xl font-bold text-blue-900 mb-4">Contact & RSVP</h2>
-      <p class="text-lg"><strong>Email RSVP:</strong> <a href="mailto:bmkhize@cut.ac.za" class="text-blue-700 hover:underline">bmkhize@cut.ac.za</a></p>
-      <p class="text-lg font-semibold">Follow us:</p>
+    <section id="contact" class="section max-w-4xl mx-auto px-6 py-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Contact & RSVP</h2>
+      <p class="text-lg mb-2"><strong>Email RSVP:</strong> <a href="mailto:bmkhize@cut.ac.za" class="text-blue-700 hover:underline">bmkhize@cut.ac.za</a></p>
+      <p class="text-lg font-semibold mb-2">Follow us:</p>
       <ul class="space-y-1 text-lg">
         <li>📘 Facebook: <a href="#" class="text-blue-700 hover:underline">Tourism Cares Dtem</a></li>
         <li>💬 WhatsApp: <a href="#" class="text-blue-700 hover:underline">Tourism Cares</a></li>
@@ -128,22 +177,50 @@
     </section>
 
     <!-- Sponsors Section -->
-    <section class="bg-gray-200 py-4 px-6 max-w-4xl mx-auto text-center rounded-xl my-4">
-      <h3 class="text-2xl font-bold text-blue-900 mb-2">Our Sponsors</h3>
-      <ul class="flex justify-center gap-4 flex-wrap items-center">
-        <li><img src="cut.png" alt="CUT Tourism Department" class="h-10"></li>
-        <li><img src="disabilityunit.png" alt="Disability Unit" class="h-10"></li>
-        <li><img src="meals.png" alt="Meals on Wheels" class="h-10"></li>
-        <li><img src="anaths.png" alt="ANATHS" class="h-10"></li>
-        <li><img src="proaccess.png" alt="ProAccess" class="h-10"></li>
-      </ul>
+    <section id="sponsors" class="my-8 max-w-6xl mx-auto">
+      <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4 text-center">Special Thanks to Our Sponsors</h3>
+      <div class="sponsor-container">
+        <div class="sponsor-track">
+          <div>
+            <img src="cutlogo.png" alt="CUT logo">
+            <img src="cut.png" alt="CUT Tourism Department">
+            <img src="disabilityunit.png" alt="Disability Unit">
+            <img src="meals.png" alt="Meals on Wheels">
+            <img src="anaths.png" alt="ANATHS">
+            <img src="proaccess.png" alt="ProAccess">
+          </div>
+          <div>
+            <img src="cutlogo.png" alt="CUT logo">
+            <img src="cut.png" alt="CUT Tourism Department">
+            <img src="disabilityunit.png" alt="Disability Unit">
+            <img src="meals.png" alt="Meals on Wheels">
+            <img src="anaths.png" alt="ANATHS">
+            <img src="proaccess.png" alt="ProAccess">
+            
+          </div>
+        <div>
+          <img src="cutlogo.png" alt="CUT logo">
+            <img src="cut.png" alt="CUT Tourism Department">
+            <img src="disabilityunit.png" alt="Disability Unit">
+            <img src="meals.png" alt="Meals on Wheels">
+            <img src="anaths.png" alt="ANATHS">
+            <img src="proaccess.png" alt="ProAccess">
+          </div>
+          <div>
+            <img src="cutlogo.png" alt="CUT logo">
+            <img src="cut.png" alt="CUT Tourism Department">
+            <img src="disabilityunit.png" alt="Disability Unit">
+            <img src="meals.png" alt="Meals on Wheels">
+            <img src="anaths.png" alt="ANATHS">
+            <img src="proaccess.png" alt="ProAccess"> 
+      </div>
     </section>
 
   </main>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-4 text-center mt-auto">
-    <p>&copy; 2025 Tourism Cares | Organized by Diploma in Tourism & Event Management, CUT Free State</p>
+  <footer class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-6 text-center shadow-inner">
+    <p>&copy; 2025 Tourism Cares | Organized by 2nd year students pursuing Diploma in Tourism & Event Management, CUT Free State</p>
   </footer>
 
 </body>
