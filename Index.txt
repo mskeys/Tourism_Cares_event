@@ -129,27 +129,138 @@
       </ul>
     </section>
 
-    <!-- Program -->
+        <!-- Program -->
     <section id="program" class="section bg-blue-50 py-8 px-6 max-w-4xl mx-auto rounded-2xl my-6">
       <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Program Schedule</h2>
-      <ul class="space-y-2 text-lg">
-        <li><b>09:00 – 09:20</b> | Registration & Welcome – Guest arrivals, accessibility tools display</li>
-        <li><b>09:20 – 09:30</b> | Opening Prayer – Led by the Pastor</li>
-        <li><b>09:30 – 09:45</b> | Welcome Remarks – “Inclusive Tourism for All”</li>
-        <li><b>09:45 – 10:00</b> | Entertainment – Traditional Dance Group</li>
-        <li><b>10:00 – 10:20</b> | Keynote Address – Importance of Inclusivity in Tourism</li>
-        <li><b>10:20 – 10:40</b> | Student Performance #1</li>
-        <li><b>10:40 – 11:40</b> | Panel Discussion – “Creating Inclusive Experiences in Public Spaces”</li>
-        <li><b>11:40 – 11:50</b> | Wheelchair Dance Performance</li>
-        <li><b>11:50 – 12:10</b> | Tea Break & Networking</li>
-        <li><b>12:10 – 12:25</b> | Student Performance #2</li>
-        <li><b>12:25 – 12:45</b> | Demonstration & Showcase – Assistive tools & accessibility features</li>
-        <li><b>12:45 – 13:00</b> | Student Performance #3</li>
-        <li><b>13:00 – 13:30</b> | Open Forum & Community Engagement</li>
-        <li><b>13:30 – 13:45</b> | Closing – Vote of Thanks, Souvenirs</li>
-        <li><b>14:00</b> | Lunch – Directions provided</li>
-      </ul>
+      <div class="bg-white shadow-xl rounded-2xl p-6 overflow-x-auto">
+        <h3 class="text-xl font-semibold mb-4">Tourism Cares 2025</h3>
+        <p><strong>Date:</strong> 26 September 2025</p>
+        <p><strong>Time:</strong> 09:00 AM – 2:00 PM</p>
+        <p><strong>Venue:</strong> PACOFS 12 First Avenue, Bloemfontein</p>
+
+        <table class="table-auto border-collapse w-full mt-6 text-left text-sm md:text-base">
+          <thead>
+            <tr class="bg-blue-100">
+              <th class="border px-4 py-2">Time</th>
+              <th class="border px-4 py-2">Item</th>
+              <th class="border px-4 py-2">Person Responsible</th>
+              <th class="border px-4 py-2">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border px-4 py-2">8:45 – 9:15</td>
+              <td class="border px-4 py-2">Registration and Welcome</td>
+              <td class="border px-4 py-2">CUT EVM students</td>
+              <td class="border px-4 py-2">Guest arrivals and registration. Accessibility tools and props display open</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">9:15 – 9:25</td>
+              <td class="border px-4 py-2">Opening Prayer</td>
+              <td class="border px-4 py-2">Led by the Pastor</td>
+              <td class="border px-4 py-2"></td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">9:25 – 9:35</td>
+              <td class="border px-4 py-2">Welcome Remarks</td>
+              <td class="border px-4 py-2">DR BMS</td>
+              <td class="border px-4 py-2">Setting the theme: “Inclusive Tourism and Accessibility for All”. Learning basic Sign Language</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">9:40 – 10:00</td>
+              <td class="border px-4 py-2">Entertainment</td>
+              <td class="border px-4 py-2">Ezika Shaka</td>
+              <td class="border px-4 py-2">Traditional Dance Group acknowledging the role of heritage</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">10:00 – 10:30</td>
+              <td class="border px-4 py-2">Keynote Address</td>
+              <td class="border px-4 py-2">Mandy</td>
+              <td class="border px-4 py-2">Focus on the importance of inclusivity in tourism</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">10:30 – 10:40</td>
+              <td class="border px-4 py-2">Entertainment</td>
+              <td class="border px-4 py-2">EVM</td>
+              <td class="border px-4 py-2">Student Performance #1</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">10:40 – 11:40</td>
+              <td class="border px-4 py-2">Panel & Audience Discussion</td>
+              <td class="border px-4 py-2">MR T, ANATHS, PROACCESS</td>
+              <td class="border px-4 py-2">Inclusive Tourism & Accessibility for All. Co-creating Inclusive Experiences. Acknowledging Deaf & Hard-of-Hearing, Albinism, Mental Health Awareness. Learning basic Sign Language</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">11:45 – 12:00</td>
+              <td class="border px-4 py-2">Entertainment</td>
+              <td class="border px-4 py-2">CUT</td>
+              <td class="border px-4 py-2">Wheelchair Dance</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">12:00 – 12:10</td>
+              <td class="border px-4 py-2">Body Break & Networking</td>
+              <td class="border px-4 py-2">ALL</td>
+              <td class="border px-4 py-2"></td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">12:10 – 12:25</td>
+              <td class="border px-4 py-2">Entertainment</td>
+              <td class="border px-4 py-2">EVM</td>
+              <td class="border px-4 py-2">Student Performance. Learning basic Sign Language</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">12:25 – 12:45</td>
+              <td class="border px-4 py-2">Demonstration & Showcase</td>
+              <td class="border px-4 py-2">Provincial Parks</td>
+              <td class="border px-4 py-2">Assistive tools and accessibility features in tourism and parks. Hands-on experience for students & guests</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">12:45 – 12:55</td>
+              <td class="border px-4 py-2">Entertainment</td>
+              <td class="border px-4 py-2">EVM</td>
+              <td class="border px-4 py-2">Student Performance #3. Learning basic Sign Language</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">1:00 – 1:30</td>
+              <td class="border px-4 py-2">Open Forum & Community Engagement</td>
+              <td class="border px-4 py-2">DR T</td>
+              <td class="border px-4 py-2">Interactive discussion with the audience and stakeholders</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">1:30 – 1:45</td>
+              <td class="border px-4 py-2">Vote of Thanks</td>
+              <td class="border px-4 py-2">Dr BMS & DR T</td>
+              <td class="border px-4 py-2">Final acknowledgements & distribution of branded items/souvenirs</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">2:00</td>
+              <td class="border px-4 py-2">Lunch</td>
+              <td class="border px-4 py-2"></td>
+              <td class="border px-4 py-2">Directions to lunch venues provided</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="fixed inset-0 bg-white flex flex-col items-center justify-center z-50">
+      <div class="animate-spin rounded-full h-20 w-20 border-t-4 border-blue-600 border-solid mb-6"></div>
+      <h2 class="text-2xl font-bold text-blue-800 animate-pulse">Welcome to Tourism Cares Event 2025</h2>
+      <p class="mt-2 text-gray-600">Loading event details...</p>
+    </div>
+
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("loading-screen");
+        setTimeout(() => {
+          loader.style.opacity = "0";
+          loader.style.transition = "opacity 0.6s ease";
+          setTimeout(() => loader.style.display = "none", 600);
+        }, 1500);
+      });
+    </script>
+
 
     <!-- Meaning -->
     <section id="meaning" class="section bg-gray-100 py-8 px-6 max-w-4xl mx-auto rounded-2xl my-6">
@@ -182,7 +293,6 @@
       <div class="sponsor-container">
         <div class="sponsor-track">
           <div>
-            <img src="cutlogo.png" alt="CUT logo">
             <img src="cut.png" alt="CUT Tourism Department">
             <img src="disabilityunit.png" alt="Disability Unit">
             <img src="meals.png" alt="Meals on Wheels">
@@ -190,16 +300,6 @@
             <img src="proaccess.png" alt="ProAccess">
           </div>
           <div>
-            <img src="cutlogo.png" alt="CUT logo">
-            <img src="cut.png" alt="CUT Tourism Department">
-            <img src="disabilityunit.png" alt="Disability Unit">
-            <img src="meals.png" alt="Meals on Wheels">
-            <img src="anaths.png" alt="ANATHS">
-            <img src="proaccess.png" alt="ProAccess">
-            
-          </div>
-        <div>
-          <img src="cutlogo.png" alt="CUT logo">
             <img src="cut.png" alt="CUT Tourism Department">
             <img src="disabilityunit.png" alt="Disability Unit">
             <img src="meals.png" alt="Meals on Wheels">
@@ -207,12 +307,20 @@
             <img src="proaccess.png" alt="ProAccess">
           </div>
           <div>
-            <img src="cutlogo.png" alt="CUT logo">
             <img src="cut.png" alt="CUT Tourism Department">
             <img src="disabilityunit.png" alt="Disability Unit">
             <img src="meals.png" alt="Meals on Wheels">
             <img src="anaths.png" alt="ANATHS">
-            <img src="proaccess.png" alt="ProAccess"> 
+            <img src="proaccess.png" alt="ProAccess">
+          </div>
+          <div>
+            <img src="cut.png" alt="CUT Tourism Department">
+            <img src="disabilityunit.png" alt="Disability Unit">
+            <img src="meals.png" alt="Meals on Wheels">
+            <img src="anaths.png" alt="ANATHS">
+            <img src="proaccess.png" alt="ProAccess">
+          </div>
+        </div>
       </div>
     </section>
 
